@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { Colors } from '../../constans/colors';
 
-const opacity = 1;
+const opacity = 0.6;
 
 export const Container = styled.div`
   height: 900px;
   min-width: 1600px;
-  //background: url("/store.png");
+  background: ${(props) => (props.background ? 'url("/store.png")' : 'none')};
   background-position-y: -3px;
   background-position-x: -1px;
 
@@ -76,13 +76,6 @@ export const GameMenu = styled.div`
   height: 100%;
   width: 338px;
   background-color: darkolivegreen;
-  opacity: ${opacity};
-`;
-
-export const Money = styled.div`
-  height: 100%;
-  width: 170px;
-  background-color: white;
   opacity: ${opacity};
 `;
 

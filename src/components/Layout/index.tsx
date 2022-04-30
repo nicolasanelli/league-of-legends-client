@@ -18,6 +18,7 @@ export const Layout = (props: LayoutProps) => {
         <title>{title}</title>
         <meta name="description" content={description}/>
         <link rel="icon" href="/favicon.ico"/>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
       </Head>
       <GlobalStyle />
       <Container>
