@@ -3,6 +3,7 @@ import * as S from './style';
 import { Currency } from './Nav/Currency';
 import { GameMenu } from './Nav/GameMenu';
 import { MainMenu } from './Nav/MainMenu';
+import { PlayButton } from './Nav/PlayButton';
 
 export const LeagueClient = () => {
   const [background, setBackground] = useState(false);
@@ -19,7 +20,7 @@ export const LeagueClient = () => {
   return (
     <S.Container background={background}>
       <S.Nav>
-        <S.PlayButton />
+        <PlayButton />
         {hasWarning && <S.Warning />}
         <MainMenu />
         <S.EmptySpace />

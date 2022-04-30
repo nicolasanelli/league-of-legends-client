@@ -53,13 +53,6 @@ export const EmptySpace = styled.div`
   flex: 1;
 `;
 
-export const PlayButton = styled.div`
-  height: 100%;
-  width: 240px;
-  background-color: orangered;
-  opacity: ${opacity};
-`;
-
 export const Warning = styled.div`
   height: 100%;
   width: 75px;
