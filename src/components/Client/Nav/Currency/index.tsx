@@ -1,6 +1,6 @@
 import * as S from './style';
 
-export const Coins = () => {
+export const Currency = () => {
   const rpValue = 2067;
   const beValue = 95279;
   return (
@@ -11,7 +11,7 @@ export const Coins = () => {
       <S.Info>
         <S.InfoLine>
           <S.IconContainer>
-            <S.Icon src={'/RP_icon.png'} />
+            <S.Icon src={'/icon/riot_points.png'} />
           </S.IconContainer>
           <S.Value>
             {rpValue}
@@ -19,7 +19,7 @@ export const Coins = () => {
         </S.InfoLine>
         <S.InfoLine>
           <S.IconContainer>
-            <S.Icon src={'/BE_icon.png'} />
+            <S.Icon src={'/icon/blue_essence.png'} />
           </S.IconContainer>
           <S.Value>
             {beValue}

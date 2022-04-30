@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import * as S from './style';
-import { Coins } from './Nav/Coins';
+import { Currency } from './Nav/Currency';
+import { GameMenu } from './Nav/GameMenu';
 
 export const LeagueClient = () => {
-  const [background, setBackground] = useState(true);
-  const [hasWarning, setHasWarning] = useState(false);
+  const [background, setBackground] = useState(false);
+  const [hasWarning, setHasWarning] = useState(true);
 
   const toggleWarning = () => {
     setHasWarning(!hasWarning);
@@ -21,8 +22,8 @@ export const LeagueClient = () => {
         {hasWarning && <S.Warning />}
         <S.MainMenu />
         <S.EmptySpace />
-        <S.GameMenu />
-        <Coins />
+        <GameMenu />
+        <Currency />
       </S.Nav>
       <S.Content>
         <S.Main>
