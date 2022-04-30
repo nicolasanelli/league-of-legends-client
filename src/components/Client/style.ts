@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { Colors } from '../../constans/colors';
 
-const opacity = 0.6;
+const opacity = 1;
 
 export const Container = styled.div`
   height: 900px;
   min-width: 1600px;
-  background: ${(props) => (props.background ? 'url("/store.png")' : 'none')};
+  width: 1600px;
+  background: ${(props) => (props.background ? 'url("/store.png") no-repeat' : 'none')};
   background-position-y: -3px;
   background-position-x: -1px;
 
@@ -22,6 +23,7 @@ export const Nav = styled.nav`
   position: absolute;
   border-bottom: 1px solid ${Colors.DARK_GRAY};
   display: flex;
+  z-index: 99;
 `;
 
 export const Content = styled.div`
@@ -32,7 +34,8 @@ export const Content = styled.div`
 
 export const Main = styled.div`
   flex: 1;
-  flex-basis: 100%;
+  flex-basis: calc(1598px - 280px);
+  flex-grow: 0;
   padding-top: 101px;
   background-color: #0f0e0f;
   // background-color: ${Colors.DARK_BLUE};
@@ -61,14 +64,6 @@ export const Warning = styled.div`
   height: 100%;
   width: 75px;
   background-color: darkred;
-  opacity: ${opacity};
-`;
-
-export const MainMenu = styled.div`
-  height: 100%;
-  width: 272px;
-  //flex: 1;
-  background-color: cornflowerblue;
   opacity: ${opacity};
 `;
 

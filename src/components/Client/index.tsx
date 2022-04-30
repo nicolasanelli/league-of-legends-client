@@ -2,6 +2,7 @@ import { useState } from 'react';
 import * as S from './style';
 import { Currency } from './Nav/Currency';
 import { GameMenu } from './Nav/GameMenu';
+import { MainMenu } from './Nav/MainMenu';
 
 export const LeagueClient = () => {
   const [background, setBackground] = useState(false);
@@ -20,7 +21,7 @@ export const LeagueClient = () => {
       <S.Nav>
         <S.PlayButton />
         {hasWarning && <S.Warning />}
-        <S.MainMenu />
+        <MainMenu />
         <S.EmptySpace />
         <GameMenu />
         <Currency />
