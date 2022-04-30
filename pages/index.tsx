@@ -1,14 +1,11 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
+import { Layout } from '../src/components/Layout';
+import { LeagueClient } from '../src/components/Client';
 
 const Home: NextPage = () => (
-    <div>
-      <Head>
-        <title>League of Legends</title>
-        <meta name="description" content="League of Legends clone"/>
-        <link rel="icon" href="/favicon.ico"/>
-      </Head>
-    </div>
+  <Layout>
+    <LeagueClient />
+  </Layout>
 );
 
 export default Home;
